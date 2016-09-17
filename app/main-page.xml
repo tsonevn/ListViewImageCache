@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <GridLayout>
+      <ListView items="{{ source }}"  loaded="onLoaded" itemLoading="onItemLoading" itemTap="onItemTap">
+          <ListView.itemTemplate>
+              <GridLayout rows="50 *" columns="*" height="100">
+                <Label text="{{ title }}" row="0" col="0" textWrap="true" />
+                <Image src="{{ imageSrc }}" row="1" col="0" stretch="aspectFill" height="100"/>
+              </GridLayout>
+          </ListView.itemTemplate>
+      </ListView>
+  </GridLayout>
+</Page>
